@@ -17,6 +17,7 @@ public class DronesApplication {
 	public static void main(String[] args) {  
 		SpringApplication.run(DronesApplication.class, args);
                 DronesService dronesService=new DronesService();
-                dronesService.idle();
+               //this will trigger the scheduled job to put all drones in active for five minutes to IDLE states
+			    dronesService.idle();
 	}
 }
